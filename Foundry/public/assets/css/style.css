@@ -1,0 +1,1211 @@
+:root {
+  --pink: #bf2e97;
+  --bg-linear-blue: linear-gradient(#141e30, #243b55);
+  --font-cinzel: "Cinzel Decorative", cursive;
+  --font-classique: sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 30px;
+  padding: 3px 10px;
+}
+body {
+  font-family: var(--font-classique);
+  background: var(--bg-linear-blue);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+}
+.container {
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+/********************************** MISCELLANEOUS *****************************/
+.welcome {
+  color: var(--pink);
+  font-family: var(--font-cinzel);
+}
+.pink{
+  color: var(--pink);
+  font-family: var(--font-cinzel);
+  text-align:center;
+  font-size: 2em;
+  margin-top: 2em;
+  font-weight:bold;
+}
+.return {
+  background: -webkit-linear-gradient(
+    103deg,
+    rgba(217, 27, 194, 1) 32%,
+    rgba(255, 0, 255, 1) 50%,
+    rgba(191, 46, 151, 1) 61%,
+    rgba(191, 46, 151, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.error {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+.flex {
+  display: flex;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.spaceEvenly {
+  justify-content: space-evenly;
+}
+.center {
+  text-align: center;
+}
+
+.fullCenter {
+  justify-content: center;
+  align-items: center;
+}
+.alignCenter {
+  align-items: center;
+}
+.flexStart {
+  justify-content: start;
+}
+.spaceAround {
+  justify-content: space-around;
+}
+.spaceBetween {
+  justify-content: space-between;
+}
+.green,
+.green:before {
+  display: none;
+  font-family: "Font Awesome 5 Free";
+  content: "\f111";
+  padding-right: 3px;
+  color: #32cd32;
+  font-size: 20px;
+}
+.red,
+.red:before {
+  display: none;
+  font-family: "Font Awesome 5 Free";
+  content: "\f111";
+  color: #dc143c;
+  padding-right: 3px;
+  font-size: 20px;
+}
+.yellow,
+.yellow:before {
+  display: none;
+  font-family: "Font Awesome 5 Free";
+  content: "\f111";
+  color: #ffd700;
+  padding-right: 3px;
+  font-size: 20px;
+}
+/********************************** HOME **************************************/
+.Iam {
+  font: normal 40px/50px Montserrat, sans-serif;
+  color: #999;
+}
+.Iam a {
+  height: 50px;
+  float: left;
+  text-decoration: none;
+  width: 50%;
+  font-size: 0.8em;
+  margin-right: 0.6em;
+}
+.spanb {
+  font-weight:bold;
+  float: left;
+  overflow: hidden;
+  height: 50px;
+  top: 40px;
+  vertical-align: baseline;
+}
+.Iam .innerIam {
+  font-size: 0.8em;
+  display: inline-block;
+  color: #e74c3c;
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+  /*animation*/
+  -webkit-animation: move 5s;
+  -moz-animation: move 5s;
+  -ms-animation: move 5s;
+  -o-animation: move 5s;
+  animation: move 5s;
+  /*compteur d'animation*/
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  /*delai d'animation*/
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+}
+@keyframes move {
+  0% {
+    top: 0px;
+  }
+  20% {
+    top: -50px;
+  }
+  40% {
+    top: -100px;
+  }
+  60% {
+    top: -150px;
+  }
+  80% {
+    top: -200px;
+  }
+}
+@-webkit-keyframes move {
+  0% {
+    top: 0px;
+  }
+  20% {
+    top: -50px;
+  }
+  40% {
+    top: -100px;
+  }
+  60% {
+    top: -150px;
+  }
+  80% {
+    top: -200px;
+  }
+}
+@-moz-keyframes move {
+  0% {
+    top: 0px;
+  }
+  20% {
+    top: -50px;
+  }
+  40% {
+    top: -100px;
+  }
+  60% {
+    top: -150px;
+  }
+  80% {
+    top: -200px;
+  }
+}
+@-o-keyframes move {
+  0% {
+    top: 0px;
+  }
+  20% {
+    top: -50px;
+  }
+  40% {
+    top: -100px;
+  }
+  60% {
+    top: -150px;
+  }
+  80% {
+    top: -200px;
+  }
+}
+@keyframes move {
+  0% {
+    top: 0px;
+  }
+  20% {
+    top: -50px;
+  }
+  40% {
+    top: -100px;
+  }
+  60% {
+    top: -150px;
+  }
+  80% {
+    top: -200px;
+  }
+}
+/********************************** MENU DIV **********************************/
+.popover {
+  display: none;
+  box-shadow: 0px 6px 8px rgba(19, 19, 19, 0.7);
+}
+.popover:target {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popover .content {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 0;
+  height: 0;
+  color: #fff;
+  background-color: #191919;
+  animation: 1s grow ease forwards;
+  text-align: center;
+}
+.nav_list {
+  list-style-type: none;
+}
+.nav_list a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+}
+.nav_list_item {
+  height: 100%;
+  overflow: hidden;
+}
+.nav_list li {
+  font-family: var(--font-cinzel);
+  padding: 15px 0;
+  transform: translateY(200px);
+  text-transform: capitalize;
+  opacity: 0;
+  animation: 2s slideUp ease forwards 0.5s;
+  position: relative;
+}
+.nav_list li::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0px;
+  left: 0;
+  bottom: 10px;
+  background: var(--pink);
+  transition: all 0.5s ease;
+}
+
+.popover p {
+  padding: 50px;
+  opacity: 0;
+  animation: 1s fadeIn ease forwards 1s;
+}
+.popover .close::after {
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--pink);
+  color: #fff;
+  content: "×";
+  cursor: pointer;
+  opacity: 0;
+  animation: 1s fadeIn ease forwards 0.5s;
+}
+@keyframes grow {
+  100% {
+    height: 90%;
+    width: 90%;
+  }
+}
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideUp {
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/********************************** REGISTER **********************************/
+.form {
+  background-color: #15172b;
+  border-radius: 20px;
+  padding: 20px;
+  width: 320px;
+}
+.title {
+  background: -webkit-linear-gradient(
+    103deg,
+    rgba(217, 27, 194, 1) 32%,
+    rgba(255, 0, 255, 1) 50%,
+    rgba(191, 46, 151, 1) 61%,
+    rgba(191, 46, 151, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 30px;
+  text-align: center;
+}
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+.ic1 {
+  margin-top: 40px;
+}
+.ic2 {
+  margin-top: 30px;
+}
+.margin1 {
+  margin: 1em;
+}
+.margin2 {
+  margin-top: 3em;
+}
+.input,
+.input2 {
+  text-align: center;
+  background-color: #303245;
+  border-radius: 12px;
+  border: 0;
+  color: #eee;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+.input2 {
+  width: 115%;
+}
+.cut {
+  background-color: #15172b;
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 76px;
+}
+.cut-short {
+  width: 50px;
+}
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+  transform: translateY(8px);
+}
+.placeholder {
+  color: #65657b;
+  left: 20px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+}
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+  transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+.input:not(:placeholder-shown) ~ .placeholder {
+  color: #808097;
+}
+.input:focus ~ .placeholder {
+  color: #dc2f55;
+}
+.submit {
+  background-color: #08d;
+  border-radius: 12px;
+  border: 0;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+  text-align: center;
+  width: 100%;
+}
+.submit:active {
+  background-color: #06b;
+}
+.flexForm {
+  align-items: center;
+  justify-content: center;
+  height: 96vh;
+  flex-direction: column;
+}
+.connexionDiv {
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.connexionA {
+  text-decoration: none;
+  color: var(--pink);
+}
+
+/********************************** DASHBOARD *********************************/
+.imgBg {
+  display: none;
+}
+/********************************** MY ACCOUNT ********************************/
+.listChar {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 5em;
+  text-align: center;
+}
+body .ajust1 {
+  margin-top: 1em;
+}
+.divListChar {
+  font-size: 0.8em;
+}
+.deleteChar {
+  box-shadow: 0px 1px 0px 0px #cf866c;
+  background: linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+  background-color: #d0451b;
+  border-radius: 15px;
+  border: 1px solid #942911;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 0.7em;
+  font-weight: bold;
+  padding: 10px 14px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #854629;
+  margin: 5px;
+}
+.ajustListChar {
+  margin:auto 2em;
+}
+/********************************** CREDENTIAL UPDATE *************************/
+.listCharUpdate {
+  display: none;
+}
+.ajust2 {
+  margin-top: 2em;
+  height: 90vh;
+}
+.ajustA {
+  font-size: 1.3em;
+}
+/***************************** ADMIN_USERS - MENU *****************************/
+.wrapper .sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: rgb(5, 68, 104);
+  top: 0;
+  left: 0;
+  padding: 20px 0;
+}
+.divAdminGlobal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.tableAdminMain {
+  margin: 0;
+  font-size: 0.7em;
+  border-collapse: collapse;
+}
+.wrapper .sidebar .profile {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.wrapper .sidebar .profile img {
+  display: block;
+  width: 35%;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.wrapper .sidebar ul li a {
+  display: block;
+  padding: 13px 30px;
+  border-bottom: 1px solid #10558d;
+  color: rgb(241, 237, 237);
+  font-size: 16px;
+  position: relative;
+  text-align: center;
+}
+/* ADMIN_USERS - HOVER MENU */
+.wrapper .sidebar ul li a .icon {
+  color: #dee4ec;
+  width: 30px;
+  display: inline-block;
+}
+.wrapper .sidebar ul li a.active {
+  color: #0c7db1;
+  background: white;
+  border-right: 2px solid rgb(5, 68, 104);
+  text-align: center;
+}
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon {
+  color: #0c7db1;
+}
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before {
+  display: block;
+}
+
+/**************************** ADMIN_USERS - CENTRAL ***************************/
+.flexCenter {
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+  flex-direction: column;
+}
+.tableAdminUsers {
+  margin: 5em auto;
+}
+.tableAdminUsers,
+.tableAdminUsers td {
+  border: 1px solid #333;
+  background-color: white;
+  width: 100%;
+  height: fill;
+  text-align: center;
+}
+.tableAdminUsers thead,
+.tableAdminUsers tfoot {
+  background-color: #333;
+  color: #fff;
+}
+.tableAdminUsers tfoot td {
+  background-color: #333;
+  cursor: pointer;
+}
+.infoBtn {
+  box-shadow: 0px 1px 0px 0px #1c1b18;
+  background: linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+  background-color: #eae0c2;
+  border-radius: 15px;
+  border: 1px solid #333029;
+  display: inline-block;
+  cursor: pointer;
+  color: #505739;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 10px 14px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+  margin: 5px;
+}
+
+.infoBtn:active {
+  position: relative;
+  top: 1px;
+}
+.deleteBtn {
+  box-shadow: 0px 1px 0px 0px #cf866c;
+  background: linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+  background-color: #d0451b;
+  border-radius: 15px;
+  border: 1px solid #942911;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 0.7em;
+  font-weight: bold;
+  padding: 10px 14px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #854629;
+  margin: 5px;
+}
+
+.deleteBtn:active {
+  position: relative;
+  top: 1px;
+}
+.updateBtn {
+  box-shadow: 0px 1px 0px 0px #fff6af;
+  background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+  background-color: #ffec64;
+  border-radius: 15px;
+  border: 1px solid #ffaa22;
+  display: inline-block;
+  cursor: pointer;
+  color: #333333;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 10px 14px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffee66;
+  margin: 5px;
+}
+
+.updateBtn:active {
+  position: relative;
+  top: 1px;
+}
+/*********************************PAGINATION***********************************/
+.pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  padding: 5px;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: var(--pink);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/*********************************ADMIN_UPDATE*********************************/
+.pEachChar {
+  color: white;
+}
+
+/**********************************ABOUT***************************************/
+.aboutTitle {
+  font-family: var(--font-cinzel);
+  background: -webkit-linear-gradient(
+    103deg,
+    rgba(217, 27, 194, 1) 32%,
+    rgba(255, 0, 255, 1) 50%,
+    rgba(191, 46, 151, 1) 61%,
+    rgba(191, 46, 151, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  text-align: center;
+  margin: 5%;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+.aboutP {
+  color: white;
+  text-align: center;
+  margin: 3%;
+  font-size: 1rem;
+}
+/******************************* RACES ****************************************/
+/**************************** Boutons géréraux ********************************/
+
+.btnNavChar {
+  color: var(--pink);
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid var(--pink);
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.btnNavChar:before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #fff;
+  animation: shiny 5s ease-in-out infinite;
+}
+.btnNavChar:active {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3), -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.createBtn {
+  color: #40d168;
+  border: 2px solid #40d168;
+}
+
+@-webkit-keyframes shiny {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  81% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+/***************************** Inside panel************************************/
+.navBtnsRace {
+  text-align: center;
+  margin: 2.5rem auto;
+}
+.racePanel {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.h2Race {
+  margin-bottom: 0.2em;
+  color: var(--pink);
+  font-family: var(--font-cinzel);
+  font-size: 1.2em;
+  text-decoration: underline;
+  text-align: center;
+}
+.imgRaceJs {
+  width: 45%;
+  box-shadow: 10px 10px 8px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.ficheBtn {
+  font-weight: bold;
+  background-color: var(--bg-linear-blue);
+  color: var(--pink);
+  border-radius: 7px;
+  text-transform: uppercase;
+  font-size: 16px;
+  transform: skew(-21deg);
+  box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.26);
+  margin: 10px;
+  padding: 15px 60px;
+  cursor: pointer;
+}
+
+#characterData li {
+  background-color: white;
+  border: 1px solid black;
+  list-style-type: none;
+  padding: 10px;
+}
+
+.imgRace {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+/***************************** CLASSES *************************************/
+.imgClasseJs {
+  width: 70%;
+  margin-top: 1em;
+  border-radius: 50%;
+  box-shadow: 10px 10px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.asideRaceJs {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.classBtnJs {
+  padding: 0.2em 1em;
+  margin: 0.5em;
+}
+.sectionRaceJS {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/***************************** Btns Stats *************************************/
+.inputFields {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 1em;
+  padding: 10px;
+  width: 250px;
+  border: 1px solid rgba(10, 180, 180, 1);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: rgba(20, 20, 20, 0.2);
+  color: white;
+  outline: none;
+}
+
+.contentStats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contentStats div p {
+  color: white;
+}
+.contentStats div label {
+  color: var(--pink);
+}
+.labelStats {
+  font-size: 2em;
+}
+
+#hiddenOne {
+  opacity: 0;
+}
+.connexionP {
+  color: white;
+  font-size: 1.2em;
+}
+/***************************** Inputs Finaux **********************************/
+.input3 {
+  width: 95%;
+}
+
+
+
+/*******************************************************************************
+******************************TABLETTES*****************************************
+*******************************************************************************/
+
+
+@media only screen and (min-width: 601px) {
+  
+  /**********************************REGISTER**********************************/
+  .form {
+    width: 60%;
+  }
+  .title {
+    font-size: 3em;
+  }
+  /**********************************DIV***************************************/
+  .nav_list a {
+    font-size: 40px;
+  }
+  /**********************************ABOUT*************************************/
+  .aboutTitle {
+    font-size: 2.5rem;
+  }
+  .aboutP {
+    font-size: 1.3rem;
+    line-height: 2em;
+  }
+  .regulHeight {
+    height: 97vh;
+  }
+
+  /********************************** MY ACCOUNT ******************************/
+  .listChar {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 5em;
+    text-align: center;
+  }
+  body .ajust1 {
+    margin-top: 7em;
+  }
+
+  .tableAdminCred {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 1.5em;
+  }
+  .divListChar{
+    font-size: 1.4em;
+    width:70%;
+    margin:auto;
+    text-align:center;
+  }
+  /********************************** ADMIN USERS *****************************/
+  .adminMenuGlob {
+    flex-direction: column;
+  }
+  .imgBg {
+    display: inherit;
+    margin-top: 10em;
+  }
+  .wrapper .sidebar .profile img {
+    width: 25%;
+  }
+  .tableAdminMain {
+    font-size: 1.6em;
+  }
+  .pagination a {
+    font-size: 2em;
+  }
+  .wrapper .sidebar ul li a {
+    font-size: 1.5em;
+  }
+  /********************************** CREDENTIAL UPDATE ***********************/
+  .listCharUpdate {
+    display: initial;
+    margin-right: 3em;
+  }
+  .ajust2 {
+    margin: 0 0 0 3em;
+    width: 70%;
+    height: auto;
+  }
+  .ajust3 {
+    margin-top: 8em;
+  }
+  .titleCharAjust {
+    margin-bottom: 1em;
+  }
+  .ajustA {
+    font-size: 2.1em;
+  }
+  /***************************** Inside panel**********************************/
+  .btnNavChar {
+    font-size: 1.5em;
+    width: 40%;
+    height: auto;
+  }
+
+  .racePanel {
+    flex-direction: row;
+    margin: auto 4em;
+  }
+  .sizeRace {
+    width: 100%;
+  }
+  .h2Race {
+    margin-bottom: 2em;
+    font-size: 2em;
+  }
+  .imgRaceJs {
+    width: 90%;
+    border-radius: 10%;
+  }
+  .imgClasseJs {
+    width: 55%;
+    border-radius: 10%;
+  }
+  .ficheBtn {
+    font-size: 1.2em;
+  }
+  .classBtnJs {
+    font-size: 1.5em;
+    margin: 0.6em;
+  }
+  .connexionP {
+    color: white;
+    font-size: 1.5em;
+  }
+  .inputFields {
+    font-size: 1.4em;
+  }
+}
+
+
+
+/*******************************************************************************
+********************************DESKTOP*****************************************
+*******************************************************************************/
+
+
+
+@media only screen and (min-width: 1200px) {
+  
+  /**************************MISCELLANEOUS*************************************/
+  .green,
+  .green:before {
+    display: inline;
+  }
+  .red,
+  .red:before {
+    display: inline;
+  }
+  .yellow,
+  .yellow:before {
+    display: inline;
+  }
+  /**********************************HOME**************************************/
+  .Iam {
+    padding: 2em 5em;
+  }
+  .Iam a {
+    height: 50px;
+    margin-right: 0.8em;
+  }
+  .nav_list a {
+    font-size: 50px;
+  }
+  .nav_list li:hover:before {
+    width: 100%;
+  }
+  /**********************************ABOUT*************************************/
+  .aboutTitle {
+    font-size: 2rem;
+  }
+  .aboutP {
+    font-size: 1rem;
+    line-height: 1.8em;
+  }
+  /*******************************REGISTER*************************************/
+  .flexForm {
+    height: 100vh;
+  }
+  .form {
+    width: 20%;
+  }
+
+  /********************************** MY ACCOUNT ******************************/
+  .ajust1 {
+    margin-top: 5em;
+  }
+  .tableAdminCred,
+  .tableAdminCred td {
+    width: 51%;
+  }
+  .divListChar{
+    width:70%;
+    margin:auto;
+    text-align:center;
+  }
+
+  /**************************** ADMIN_USERS - CENTRAL *************************/
+  .updateBtn:hover {
+  background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+  background-color: #ffab23;
+}
+  .ficheBtn:hover {
+  box-shadow: 25px 5px 0 black, -25px -5px 0 var(--pink);
+  transition: all 0.5s ease;
+}
+  .deleteBtn:hover {
+  background: linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+  background-color: #bc3315;
+}
+  .infoBtn:hover {
+  background: linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+  background-color: #ccc2a6;
+}
+  .wrapper .sidebar ul li a:hover {
+  color: #0c7db1;
+  background: white;
+  border-right: 2px solid rgb(5, 68, 104);
+  text-align: center;
+}
+.wrapper .sidebar ul li a:hover .icon {
+  color: #0c7db1;
+}
+.wrapper .sidebar ul li a:hover:before {
+  display: block;
+}
+  .adminMenuGlob {
+    flex-direction: row;
+  }
+  .imgBg {
+    margin: 0 2em;
+    max-width: 83%;
+    object-fit: scale-down;
+  }
+  .tableAdminMain {
+    border-collapse: separate;
+    font-size: 1.3em;
+    width:50%;
+  }
+  .wrapper .sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 15em; /**/
+    height: 100vh;
+  }
+  .divAdminGlobal {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+  }
+  .tableAjust{
+    width:100%;
+  }
+  .wrapAndTable{
+    display:flex;
+    flex-direction:row;
+  }
+  .wrapper .sidebar .profile img {
+    width: 50%;
+  }
+  .wrapper .sidebar ul li a {
+    font-size: 1.2em;
+  }
+  .pagination a {
+    font-size: 1.5em;
+  }
+  /********************************** CREDENTIAL UPDATE ***********************/
+  .ajust2 {
+    width: auto;
+    height: auto;
+  }
+  .ajust3 {
+    align-items: baseline;
+  }
+  .rewidthForm {
+    width: 100%;
+  }
+
+  /***************************** Inside panel**********************************/
+  .btnNavChar {
+    width: 20%;
+    margin: 0.6em;
+    padding: 0.6em;
+  }
+  .sizeRace {
+    width: 100%;
+  }
+  .imgRaceJs {
+    width: 100%;
+  }
+  .ficheBtn {
+    font-size: 1.8em;
+  }
+  .imgClasseJs {
+    width: 30%;
+    margin-left: 10%;
+  }
+  .sectionRaceJS {
+    flex-direction: row;
+    width: 75%;
+    margin: 2em auto;
+  }
+  .contentStats {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: auto;
+  }
+  .inputStatsJs {
+    margin: 0.5em;
+  }
+}
